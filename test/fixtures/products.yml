@@ -13,3 +13,14 @@ two:
   image_url: MyString
   price: 9.99
   ref: MyString
+
+valid_tshirt:
+  title: darth vader masculina
+  description: 
+    A camiseta darth vader masculina é o carro chefe
+    da marca nerdwins. A primeira, que nunca será descontinuada.
+    Se você é fã da marca, deve encomendar uma darth vader classic
+    tshirt.
+  image_url: darthvader.png
+  price: 39.90
+  ref: 0001
