@@ -5,3 +5,6 @@ gem 'rake', '0.8.7'
 gem 'mysql'
 gem 'heroku'
 
+group :test do
+  gem 'turn'
+end
