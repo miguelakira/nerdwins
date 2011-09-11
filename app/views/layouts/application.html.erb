@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>nerd_wins</title>
-  <%= stylesheet_link_tag :all %>
+  <title>nerd_wins Virtual Store</title>
+  <%= stylesheet_link_tag "scaffold" %>
+  <%= stylesheet_link_tag "depot", :media => "all" %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
   <!-- typekit.com --> 
@@ -10,9 +11,21 @@
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script> 
 
 </head>
-<body>
-
-<%= yield %>
-
+<body id = "store">
+  <div id = "banner">
+    <%= image_tag("logo.png") %>
+    <%= @page_title || "nerd_wins store" %>
+  </div>
+  <div id = "columns">
+    <div id = "side">
+      <a href=#>Início</a>    <br />
+      <a href=#>Perguntas</a> <br />
+      <a href=#>Novidades</a> <br />
+      <a href=#>Contato</a>   <br />
+    </div>
+    <div id = "main">
+      <%= yield %>  
+    </div>
+  </div>
 </body>
 </html>
